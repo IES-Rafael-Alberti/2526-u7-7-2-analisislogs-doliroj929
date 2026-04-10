@@ -1,4 +1,66 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/omBieXIU)
+
+
+# LogTool - Analizador de Logs
+
+Herramienta de linea de comandos desarrollada en **Kotlin** para el procesamiento y filtrado de archivos de log con formato `[YYYY-MM-DD HH:MM:SS] NIVEL Mensaje`.
+
+## Caracteristicas
+
+-   **Paradigma Funcional**: Uso de funciones de orden superior y recursividad de cola (`tailrec`).
+
+-   **Modos de Salida**: Estadisticas resumidas (`--stats`) o informe detallado (`--report`).
+
+-   **Filtros**: Por fecha/hora inicial/final y niveles (INFO, WARNING, ERROR).
+
+-   **Shell Interactiva**: Permite introducir comandos directamente al ejecutar sin argumentos.
+
+
+## Como usar
+
+Ejecucion directa desde la terminal:
+
+Bash
+
+```
+./gradlew run --args="-i <ruta_archivo> --report -p"
+
+```
+
+Ejemplo con la ruta de red:
+
+Bash
+
+```
+./gradlew run --args="-i \"\\2526-u7-7-2-analisislogs-doliroj929\sample_app.log\" --stats"
+
+```
+
+## Requisitos
+
+-   JDK 17 o superior.
+
+-   Gradle (incluido en el proyecto).
+
+
+----------
+
+### Nota sobre el uso de IA
+
+Se utilizo Inteligencia Artificial como herramienta de apoyo y consulta tecnica durante el
+desarrollo de este proyecto. Su uso se limito a la asistencia en la arquitectura de clases, 
+optimizacion de funciones de orden superior y siendo el diseno de la solucion propia.
+
+
+
+
+
+
+
+
+
+
+
 # Versión en castellano
 
 ## Ejercicio: Procesador de Logs
